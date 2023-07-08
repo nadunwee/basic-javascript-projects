@@ -12,9 +12,16 @@
       <h1>Generate a </h1>
       <h1 class="main-heading">Random Password</h1>
       <p class="description">Never use insecure passowrd again</p>
+
       <label for="password-length">Password Length:</label><br>
-      <input type="range" id="password-length" min="3" max="50" value="10" oninput="updateLengthValue()">
-      <span id="length-value">10</span><br><br>
+      <input type="range" id="password-length" min="20" max="100" value="40" oninput="updateLengthValue()">
+      <span id="length-value">40</span><br><br>
+
+      <input type="checkbox" name="simpleletters" id="simpleletters"> Simple Letters
+      <input type="checkbox" name="capitalletters" id="capitalletters"> Capital Letters
+      <input type="checkbox" name="numbers" id="numbers"> numbers
+      <input type="checkbox" name="specialcharacters" id="specialcharacters"> Special Characters <br><br>
+
       <button class="password-btn" onclick="generatePassword()">Generate Password</button>
       <p class="password-p"></p>
     </div>
